@@ -8,66 +8,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg">
 
     <div class="container">
 
 
         <!-- Jumbotron -->
         <div class="jumbotron">
-            <h1 class="display-3">Are You Ready for Hangman!</h1>
+            <h1 class="display-3 text-center">Are You Ready for Hangman!</h1>
 
-            <p>Guess the artist from the 80's</p>
+            <p class="text-center">Press any letter to start.</p>
+            <p class="text-center">Guess the name artist from the 80's.</p>
 
         </div>
         <!-- /Jumbotron ends -->
         <!-- Panel 1 -->
         <div class="card my-3">
-            <div class="card-header">
+            <div class="card-header text-center">
                 <h3>Word to Guess</h3>
             </div>
             <div class="card-body">
-                <h4 id="wordToGuess"></h4>
+                <h4 id="wordToGuess" class="text-center"></h4>
                 <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
             </div>
         </div>
         <!-- /Panel 1 end -->
 
-        <!-- Panel 2 -->
-        <div class="card my-3">
-            <div class="card-body">
-                Wrong Guesses: <span id="wrongGuesses"></span>
-            </div>
-        </div>
+        <!-- Panel 2 Guesses  -->
+        <!-- <div class="card my-3">
+
+        </div> -->
         <!-- /Panel 2 end -->
 
-        <!-- Panel 3 -->
-        <div class="card my-3">
-            <div class="card-body">
-                Guesses Left: <span id="numGuesses"></span>
+        <div class="row">
+            <div class="col-sm-6 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        Wrong Guesses: <span id="wrongGuesses"></span>
+                    </div>
+                    <div class="card-body">
+                        Guesses Left: <span id="numGuesses"></span>
+                    </div>
+                    <div class="card-body">
+                        Win Counter: <span id="winCounter"></span>
+                    </div>
+                    <div class="card-body">
+                        Loss Counter: <span id="lossCounter"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-50" id="pic" src="assets/images/test4.png">
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /Panel 3 end -->
-
-        <!-- Panel 4 -->
-        <div class="card my-3">
-            <div class="card-body">
-                Win Counter: <span id="winCounter"></span>
-            </div>
-        </div>
-        <!-- /Panel 4 end -->
-
-        <!-- Panel 5 -->
-        <div class="card my-3">
-            <div class="card-body">
-                Loss Counter: <span id="lossCounter"></span>
-            </div>
-        </div>
-        <!-- /Panel 5 end -->
 
 
         <!-- Panel 4 -->
@@ -76,9 +78,10 @@
                 Featured
             </div>
             <div class="card-body">
-                <h4 class="card-title">Special title treatment</h4>
+
+                <!-- <h4 class="card-title">Special title treatment</h4>
                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
             <div class="card-footer text-muted">
                 <p>some text</p>
